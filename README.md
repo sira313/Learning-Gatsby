@@ -1,7 +1,7 @@
 ## [LIVE DEMO](https://learninggatsbyjs.netlify.com/)
 ### To Do
 
-- [ ] Add bulma
+- [x] Add bulma
 - [ ] Header, menu, footer, on left.
 - [ ] Grid all post
 - [ ] Post view using modal-card, image using modal.

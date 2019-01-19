@@ -6,4 +6,4 @@
 - [ ] Grid all post
 - [ ] Post view using modal-card, image using modal.
 
-### [GOAL](https://blog.aflasio.com/images/blog/webdesign.gif)
+### [GOAL (Desktop View](https://blog.aflasio.com/images/blog/webdesign.gif)

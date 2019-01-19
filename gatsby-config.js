@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Aflasio`,
     description: `Portfolio of a FLOSS user artist`,
-    author: `@gatsbyjs`
+    author: `@sira313`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

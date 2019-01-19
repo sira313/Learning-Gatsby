@@ -1,5 +1,9 @@
-## [DEMO](https://gallant-ritchie-b149cf.netlify.com/)
+## [LIVE DEMO](https://learninggatsbyjs.netlify.com/)
 ### To Do
 
-- [ ] Nambahin bulma
-- [ ] Ubah posisi menu dari atas ke kiri
+- [ ] Add bulma
+- [ ] Header, menu, footer, on left.
+- [ ] Grid all post
+- [ ] Post view using modal-card, image using modal.
+
+### [GOAL](https://blog.aflasio.com/images/blog/webdesign.gif)

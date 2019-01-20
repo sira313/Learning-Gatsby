@@ -1,9 +1,7 @@
+const { siteMetadata } = require('./aflasio')
+
 module.exports = {
-  siteMetadata: {
-    title: `Aflasio`,
-    description: `Portfolio of a FLOSS user artist`,
-    author: `@sira313`
-  },
+  siteMetadata,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -18,13 +16,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `${siteMetadata.title} | ${siteMetadata.description}`,
+        short_name: siteMetadata.title,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: siteMetadata.primaryColor,
+        theme_color: siteMetadata.primaryColor,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
+        icon: `src/images/aflasio.png` // This path is relative to the root of the site.
       }
     },
     `gatsby-plugin-sass`

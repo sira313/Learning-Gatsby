@@ -14,15 +14,15 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 
 ## How to
 
-### Add Bulma support
+### - Add Bulma support
 
-- Install `bulma`, `node-sass` and `gatsby-plugin-sass` as development dependencies
+Install `bulma`, `node-sass` and `gatsby-plugin-sass` as development dependencies
 
 ```bash
 yarn add -D bulma node-sass gatsby-plugin-sass
 ```
 
-- Add `gatsby-plugin-sass` to `gatsby-config.js` in `plugins` secion
+Add `gatsby-plugin-sass` to `gatsby-config.js` in `plugins` secion
 
 ```js
 plugins: [
@@ -32,7 +32,7 @@ plugins: [
 ]
 ```
 
-- Create new folder (folder name can be any) in `src` called `styles` then add new files with name `bulma.scss` and `_all.scss`.
+Create new folder (folder name can be any) in `src` called `styles` then add new files with name `bulma.scss` and `_all.scss`.
 
 ```scss
 // bulma.scss
@@ -70,13 +70,13 @@ $primary: #293e53;
 @import './bulma.scss';
 ```
 
-- Edit `gatsby-browser.js` and require the `_all.scss`
+Edit `gatsby-browser.js` and require the `_all.scss`
 
 ```js
 require('./src/styles/_all.scss')
 ```
 
-- Test Bulma by editing React element in `index.js`
+Test Bulma by editing React element in `index.js`
 
 ```js
 // index.js

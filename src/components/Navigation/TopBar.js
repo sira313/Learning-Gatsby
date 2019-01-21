@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import NavigationItem from './NavigationItem'
 
 /**
  * shown: is state of menu item on mobile
@@ -27,7 +28,7 @@ const TopBar = ({ menuItems, shown, onToggled }) => (
 
     <div id='navItem' className={`navbar-menu${shown ? ' is-active' : ''}`}>
       <div className='navbar-end'>
-        {/* TODO: Add navbar items from NavigationItem component */}
+        <NavigationItem items={menuItems} />
       </div>
     </div>
   </nav>

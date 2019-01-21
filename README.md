@@ -11,6 +11,7 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 - [x] Add Bulma support
 - [x] Add top navbar
 - [ ] Make top navbar sticky when scroll up
+- [ ] Footer credit
 
 ## How to
 

@@ -1,24 +1,52 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import React, { Component } from 'react'
+import { graphql, StaticQuery } from 'gatsby'
+import TopBar from '../Navigation/TopBar'
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
+class Layout extends Component {
+  state = {
+    isMenuShown: false
+  }
+
+  burgerHandler = () => {
+    this.setState(state => ({ isMenuShown: !state.isMenuShown }))
+  }
+
+  render () {
+    const { isNavShown = true, children } = this.props
+    const { isMenuShown } = this.state
+    const el = data => {
+      const meta = data.site.siteMetadata
+      return (
+        <>
+          {isNavShown ? (
+            <header>
+              <TopBar
+                menuItems={meta.menuItems}
+                onToggled={this.burgerHandler}
+                shown={isMenuShown}
+              />
+            </header>
+          ) : null}
+          <main>{children}</main>
+          <footer>{/* TODO: Add footer */}</footer>
+        </>
+      )
+    }
+    return <StaticQuery query={query} render={el} />
+  }
+}
+
+const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        menuItems {
+          name
+          href
         }
       }
-    `}
-    render={data => <>{children}</>}
-  />
-)
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired
-}
+    }
+  }
+`
 
 export default Layout

@@ -5,7 +5,7 @@ import SEO from '../components/Utility/SEO'
 const IndexPage = () => (
   <Layout>
     <SEO title='Home' keywords={[`gatsby`, `application`, `react`]} />
-    <section className='hero is-fullheight is-primary'>
+    <section className='hero is-fullheight is-light'>
       <div className='hero-body'>
         <div className='container has-text-centered'>
           <h1 className='title'>Aflasio</h1>

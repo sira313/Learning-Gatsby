@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import NavigationItem from './NavigationItem'
-import image from '../../images/aflasio.png'
+import image from '../../images/aflasiowhite.png'
 
 /**
  * shown: is state of menu item on mobile
  * onToggled: is a handler for burger to toggling menu item on mobile
  */
 const TopBar = ({ menuItems, shown, onToggled }) => (
-  <nav className='navbar' role='navigation' aria-label='main navigation'>
+  <nav className='navbar is-dark' role='navigation' aria-label='main navigation'>
     <div className='container'>
       <div className='navbar-brand'>
         <Link className='navbar-item' to='/'>

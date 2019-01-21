@@ -10,6 +10,7 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 
 - [x] Add Bulma support
 - [x] Add top navbar
+- [ ] Dropdown menu 'Blog' and 'Gallery' (for submenu)
 - [ ] Make top navbar sticky when scroll up
 - [ ] Footer credit
 

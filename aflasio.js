@@ -1,8 +1,8 @@
 menuItems = [
-  { name: 'Commisioned', href: '#' },
-  { name: 'Random Artwork', href: '#' },
-  { name: 'Archives', href: '#' },
-  { name: 'About', href: '#' }
+  { name: 'About', href: '#' },
+  { name: 'Gallery', href: '#' },
+  { name: 'Blog', href: '#' },
+  { name: 'Contact', href: '#' }
 ]
 
 exports.siteMetadata = {

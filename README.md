@@ -12,6 +12,7 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 - [x] Add top navbar
 - [ ] Add Feathericon
 - [ ] Make top navbar sticky when scroll up
+- [ ] Animate top navbar while show or hide
 - [ ] Footer credit
 
 ## How to

@@ -4,12 +4,7 @@ import { addOneScroll, removeOneScroll, status } from '../../shared/one-scroll'
 
 class Layout extends Component {
   state = {
-    isMenuShown: false,
     isNavShown: false
-  }
-
-  burgerHandler = () => {
-    this.setState(state => ({ isMenuShown: !state.isMenuShown }))
   }
 
   componentDidMount () {
@@ -24,12 +19,12 @@ class Layout extends Component {
 
   render () {
     const { children } = this.props
-    const { isNavShown, isMenuShown } = this.state
+    const { isNavShown } = this.state
     return (
       <>
         {isNavShown ? (
           <header>
-            <TopBar onToggled={this.burgerHandler} shown={isMenuShown} />
+            <TopBar />
           </header>
         ) : null}
         <main>{children}</main>

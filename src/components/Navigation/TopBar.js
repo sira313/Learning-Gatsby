@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { graphql, StaticQuery, Link } from 'gatsby'
 import NavigationItem from './NavigationItem'
-import image from '../../images/aflasiowhite.png'
 
 /**
  * shown: is state of menu item on mobile
@@ -18,15 +17,16 @@ class TopBar extends Component {
 
   render () {
     const { isMenuShown } = this.state
+    const { className, logoSrc } = this.props
     const el = data => (
       <nav
-        className='navbar is-fixed-top is-dark'
+        className={`navbar${className ? ' ' + className : ''}`}
         role='navigation'
         aria-label='main navigation'>
         <div className='container'>
           <div className='navbar-brand'>
             <Link className='navbar-item' to='/'>
-              <img alt='Portfolio of a FLOSS user artist' src={image} />
+              <img alt='Portfolio of a FLOSS user artist' src={logoSrc} />
             </Link>
 
             <div

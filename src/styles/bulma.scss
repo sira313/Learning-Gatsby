@@ -12,14 +12,13 @@ $primary: #363636;
 @import '~bulma/sass/base/_all';
 
 // Components
-@import '~bulma/sass/components/navbar';
+@import '~bulma/sass/components/_all';
 
 // Layout
-@import '~bulma/sass/layout/hero';
+@import '~bulma/sass/layout/_all';
 
 // Elements
-@import '~bulma/sass/elements/container';
-@import '~bulma/sass/elements/title';
+@import '~bulma/sass/elements/_all';
 
 // Grid
 @import '~bulma/sass/grid/_all';

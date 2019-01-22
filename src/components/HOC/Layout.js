@@ -29,7 +29,13 @@ class Layout extends Component {
           </header>
         ) : null}
         <main>{children}</main>
-        <footer>{/* TODO: Add footer */}</footer>
+        <footer class="footer">
+          <div class="content has-text-centered">
+            <p>
+            &copy; 2019 <a href="https://www.aflasio.com">Aflasio</a> and <a href="https://www.habib-mustofa.com">Habib Mustofa</a>.
+            </p>
+          </div>
+        </footer>
       </>
     )
   }

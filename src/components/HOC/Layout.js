@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import TopBar from '../Navigation/TopBar'
 import { addOneScroll, removeOneScroll, status } from '../../shared/one-scroll'
+import logo from '../../images/aflasiowhite.png'
 
 class Layout extends Component {
   state = {
@@ -24,7 +25,7 @@ class Layout extends Component {
       <>
         {isNavShown ? (
           <header>
-            <TopBar />
+            <TopBar className='is-fixed-top is-dark' logoSrc={logo} />
           </header>
         ) : null}
         <main>{children}</main>

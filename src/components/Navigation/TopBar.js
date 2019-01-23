@@ -26,7 +26,11 @@ class TopBar extends Component {
         <div className='container'>
           <div className='navbar-brand'>
             <Link className='navbar-item' to='/'>
-              <img alt='Portfolio of a FLOSS user artist' src={logoSrc} />
+              <img
+                className='animated slower infinite clock'
+                alt='Portfolio of a FLOSS user artist'
+                src={logoSrc}
+              />
             </Link>
 
             <div

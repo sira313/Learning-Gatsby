@@ -1,17 +1,37 @@
 import React, { Component } from 'react'
+import Transition from 'react-transition-group/Transition'
 import TopBar from '../Navigation/TopBar'
 import { addOneScroll, removeOneScroll, status } from '../../shared/one-scroll'
 import logo from '../../images/aflasiowhite.png'
 
+const anim = (state, top) => {
+  let mode = 'animated faster '
+  switch (state) {
+    case 'entering':
+      // add animation when component will mounted
+      mode += 'fadeInDown'
+      break
+    case 'exiting':
+      // add animation before component umounted
+      mode += top ? 'fadeOut' : 'fadeOutUp'
+      break
+    default:
+      mode = ''
+      break
+  }
+  return mode
+}
+
 class Layout extends Component {
   state = {
-    isNavShown: false
+    isNavShown: false,
+    top: false
   }
 
   componentDidMount () {
     addOneScroll(s => {
-      this.setState({ isNavShown: s === status.UP })
-    })
+      this.setState({ isNavShown: s === status.UP, top: s === status.TOP })
+    }, 50)
   }
 
   componentWillUnmount () {
@@ -20,14 +40,19 @@ class Layout extends Component {
 
   render () {
     const { children } = this.props
-    const { isNavShown } = this.state
+    const { top, isNavShown } = this.state
     return (
       <>
-        {isNavShown ? (
-          <header>
-            <TopBar className='is-fixed-top is-dark' logoSrc={logo} />
-          </header>
-        ) : null}
+        <Transition in={isNavShown} timeout={300} mountOnEnter unmountOnExit>
+          {state => (
+            <header>
+              <TopBar
+                className={`is-fixed-top is-dark ${anim(state, top)}`}
+                logoSrc={logo}
+              />
+            </header>
+          )}
+        </Transition>
         <main>{children}</main>
         <footer className='footer'>
           <div className='content has-text-centered'>

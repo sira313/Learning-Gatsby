@@ -4,6 +4,7 @@ import SEO from '../components/Utility/SEO'
 import TopBar from '../components/Navigation/TopBar'
 import logo from '../images/aflasiodark.png'
 import landingPage from '../images/landingPage.svg'
+import { Link } from 'gatsby'
 
 const IndexPage = () => (
   <Layout>
@@ -28,9 +29,9 @@ const IndexPage = () => (
                 My name is Sira Argia. I am an artist who use FLOSS for work.
               </h2>
               <br />
-              <p className='button is-medium is-dark is-outlined'>
+              <Link to='/' className='button is-medium is-dark is-outlined'>
                 More...
-              </p>
+              </Link>
             </div>
           </div>
         </div>

@@ -17,7 +17,7 @@ const IndexPage = () => (
         <div className='container has-text-centered'>
           <div className='columns is-vcentered'>
             <div className='column is-5'>
-              <figure className='image is-4by3'>
+              <figure className='image is-4by3 animated slower infinite heartbeat'>
                 <img src={landingPage} alt='Aflasio' />
               </figure>
             </div>

@@ -7,6 +7,9 @@ $family-primary: 'Raleway', sans-serif;
 // -> Colors
 $primary: #363636;
 
+// Background for hero
+.has-bg-img { background: url('https://bierpinter.com/wp-content/uploads/2018/05/website-design-background-1.jpg')center top; background-size:cover; }
+
 // Base modules
 @import '~bulma/sass/utilities/_all';
 @import '~bulma/sass/base/_all';

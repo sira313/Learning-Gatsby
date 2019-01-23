@@ -29,10 +29,11 @@ class Layout extends Component {
           </header>
         ) : null}
         <main>{children}</main>
-        <footer class="footer">
-          <div class="content has-text-centered">
+        <footer className='footer'>
+          <div className='content has-text-centered'>
             <p>
-            &copy; 2019 <a href="https://www.aflasio.com">Aflasio</a> and <a href="https://www.habib-mustofa.com">Habib Mustofa</a>.
+              &copy; 2019 <a href='https://www.aflasio.com'>Aflasio</a> and{' '}
+              <a href='https://www.habib-mustofa.com'>Friend</a>.
             </p>
           </div>
         </footer>

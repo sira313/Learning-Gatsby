@@ -25,7 +25,7 @@ const IndexPage = () => (
               <h1 className='title is-2'>
                 Aflasio
               </h1>
-              <h2 className='subtitle is-4'>
+              <h2 className='subtitle is-4 is-size-6-mobile'>
                 Hello.. My name is Sira Argia. I am an artist who use FLOSS for work.
               </h2>
               <br />

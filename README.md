@@ -4,7 +4,9 @@
 
 <!-- TODO: Add project description here -->
 
-This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-cli) using following command `gatsby new Learning-Gatsby`. Live demo is available [here](https://learninggatsbyjs.netlify.com/).
+This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-cli) using following command `gatsby new Learning-Gatsby`. 
+- [Live Demo](https://learninggatsbyjs.netlify.com/)
+- [Documentation](https://github.com/sira313/Learning-Gatsby/wiki)
 
 ## Todo
 

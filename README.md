@@ -22,6 +22,7 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 ## Mockup Goal
 
 ### Home Gallery
+Image ratio for the thumbnail is 2:3
 ![gallery](https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/gallery.png)
 
 ### Modal for Gallery Post

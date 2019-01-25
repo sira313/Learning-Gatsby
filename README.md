@@ -16,7 +16,7 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 - [x] Make top navbar sticky when scroll up
 - [x] Animate top navbar while show or hide
 - [x] Footer credit
-- [ ] [QuickView](https://wikiki.github.io/components/quickview/) for menu on mobile
+- [x] [QuickView](https://wikiki.github.io/components/quickview/) for menu on mobile
 - [ ] Filter to handle image
 
 ## Mockup Goal

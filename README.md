@@ -19,4 +19,4 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 - [x] [QuickView](https://wikiki.github.io/components/quickview/) for menu on mobile
 - [ ] Filter to handle image
 
-## Mockup Goal
+## [Mockup Goal](https://github.com/sira313/Learning-Gatsby/tree/master/src/images/design)

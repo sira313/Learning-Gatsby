@@ -25,23 +25,23 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 
 | Gallery  | Modal Gallery |
 | ------------- | ------------- |
-| <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/desktop/desktopGallery.png" alt="Gallery" weight="500">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/desktop/desktopModalGallery.png" alt="Modal Gallery" weight="500">  |
+| <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/desktop/desktopGallery.png" alt="Gallery" width="auto">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/desktop/desktopModalGallery.png" alt="Modal Gallery" width="auto">  |
 
 | Blog  | Modal Blog |
 | ------------- | ------------- |
-| <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/desktop/desktopBlog.png" alt="Gallery" weight="500">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/desktop/desktopModalBlog.png" alt="Modal Gallery" weight="500">  |
+| <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/desktop/desktopBlog.png" alt="Gallery" width="auto">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/desktop/desktopModalBlog.png" alt="Modal Gallery" width="auto">  |
 
 ### Mobile Screen
 
 | Gallery  | Modal Gallery |
 | ------------- | ------------- |
-| <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileGallery.png" alt="Gallery" height="500">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileModalGallery.png" alt="Modal Gallery" height="500">  |
+| <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileGallery.png" alt="Gallery" width="auto">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileModalGallery.png" alt="Modal Gallery" width="auto">  |
 
 | Blog  | Modal Blog |
 | ------------- | ------------- |
-| <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileBlog.png" alt="Gallery" height="500">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileModalBlog.png" alt="Modal Gallery" height="500">  |
+| <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileBlog.png" alt="Gallery" width="auto">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileModalBlog.png" alt="Modal Gallery" width="auto">  |
 
 | Search  | Quickview Menu |
 | ------------- | ------------- |
-| <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileSearch.png" alt="Gallery" height="500">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileQuickviewMenu.png" alt="Modal Gallery" height="500">  |
+| <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileSearch.png" alt="Gallery" width="auto">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileQuickviewMenu.png" alt="Modal Gallery" width="auto">  |
 

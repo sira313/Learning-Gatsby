@@ -20,16 +20,3 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 - [ ] Filter to handle image
 
 ## Mockup Goal
-
-### Home Gallery
-Image ratio for the thumbnail is 2:3
-![gallery](https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/gallery.png)
-
-### Modal for Gallery Post
-![modalGallery](https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/modalGallery.png)
-
-### Blog
-![blog](https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/blog.png)
-
-### Modal for Blog Post
-![modalBlog](https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/modalBlog.png)

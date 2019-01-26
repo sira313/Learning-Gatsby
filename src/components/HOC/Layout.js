@@ -3,6 +3,8 @@ import Transition from 'react-transition-group/Transition'
 import TopBar from '../Navigation/TopBar'
 import { addOneScroll, removeOneScroll, status } from '../../shared/one-scroll'
 import logo from '../../images/aflasiowhite.png'
+import { Camera, Gitlab } from 'react-feather'
+import IconButton from '../UI/IconButton'
 
 const anim = (state, top) => {
   let mode = 'animated faster '
@@ -56,6 +58,27 @@ class Layout extends Component {
         <main>{children}</main>
         <footer className='footer'>
           <div className='content has-text-centered'>
+            {/* ↓ Example using Feathericons */}
+            <p>
+              {/* IconButton is custom component to show button with icon */}
+              <IconButton
+                to='/'
+                text='Camera'
+                iconClass='is-medium'
+                buttonClass='is-info'>
+                {/* ↓ Feathericons */}
+                <Camera size={18} />
+              </IconButton>
+            </p>
+
+            <p>
+              {/* Example with no text */}
+              <IconButton to='/'>
+                {/* ↓ Feathericons */}
+                <Gitlab size={18} />
+              </IconButton>
+            </p>
+
             <p>
               &copy; 2019 <a href='https://www.aflasio.com'>Aflasio</a> and{' '}
               <a href='https://www.habib-mustofa.com'>Friend</a>.

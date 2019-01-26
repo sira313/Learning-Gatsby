@@ -6,9 +6,17 @@ import logo from '../images/aflasiowhite.png'
 import landingPage from '../images/landingPage.svg'
 import { Link } from 'gatsby'
 
+const seoKeywords = [
+  'aflasio',
+  'home',
+  'artist',
+  'landing page',
+  'tukang gambar'
+]
+
 const Index = () => (
   <Layout>
-    <SEO title='Home' keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title='Home' keywords={seoKeywords} />
     <section className='hero is-fullheight has-bg-img is-dark'>
       <div className='hero-head'>
         <TopBar logoSrc={logo} />

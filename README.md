@@ -34,13 +34,9 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 
 ### Mobile Screen
 
-| Gallery  | Modal Gallery |
-| ------------- | ------------- |
-| <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileGallery.png" alt="Gallery" width="auto">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileModalGallery.png" alt="Modal Gallery" width="auto">  |
-
-| Blog  | Modal Blog |
-| ------------- | ------------- |
-| <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileBlog.png" alt="Gallery" width="auto">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileModalBlog.png" alt="Modal Gallery" width="auto">  |
+| Gallery  | Modal Gallery | Blog | Modal Blog
+| ------------- | ------------- | ------------- | ------------- |
+| <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileGallery.png" alt="Gallery" width="auto">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileModalGallery.png" alt="Modal Gallery" width="auto">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileBlog.png" alt="Gallery" width="auto">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileModalBlog.png" alt="Modal Gallery" width="auto">  |
 
 | Search  | Quickview Menu |
 | ------------- | ------------- |

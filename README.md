@@ -18,6 +18,7 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 - [x] Footer credit
 - [x] [QuickView](https://wikiki.github.io/components/quickview/) for menu on mobile
 - [ ] Filter to handle image
+- [ ] Bulma Carousel
 
 ## Plan Design
 

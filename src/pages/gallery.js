@@ -4,7 +4,7 @@ import SEO from '../components/Utility/SEO'
 import TopBar from '../components/Navigation/TopBar'
 import logo from '../images/aflasiowhite.png'
 
-class gallery extends Component {
+class Gallery extends Component {
   render () {
     return (
       <Layout>
@@ -25,4 +25,4 @@ class gallery extends Component {
   }
 }
 
-export default gallery
+export default Gallery

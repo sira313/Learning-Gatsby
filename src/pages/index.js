@@ -6,9 +6,17 @@ import logo from '../images/aflasiowhite.png'
 import landingPage from '../images/landingPage.svg'
 import { Link } from 'gatsby'
 
-const IndexPage = () => (
+const seoKeywords = [
+  'aflasio',
+  'home',
+  'artist',
+  'landing page',
+  'tukang gambar'
+]
+
+const Index = () => (
   <Layout>
-    <SEO title='Home' keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title='Home' keywords={seoKeywords} />
     <section className='hero is-fullheight has-bg-img is-dark'>
       <div className='hero-head'>
         <TopBar logoSrc={logo} />
@@ -22,11 +30,10 @@ const IndexPage = () => (
               </figure>
             </div>
             <div className='column is-6 is-offset-1'>
-              <h1 className='title is-2'>
-                Aflasio
-              </h1>
+              <h1 className='title is-2'>Aflasio</h1>
               <h2 className='subtitle is-4 is-size-6-mobile'>
-                Hello.. My name is Sira Argia. I am an artist who use FLOSS for work.
+                Hello.. My name is Sira Argia. I am an artist who use FLOSS for
+                work.
               </h2>
               <br />
               <Link to='/' className='button is-medium is-light is-outlined'>
@@ -40,4 +47,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default Index

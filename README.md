@@ -8,7 +8,11 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 - [Live Demo](https://learninggatsbyjs.netlify.com/)
 - [Documentation](https://github.com/sira313/Learning-Gatsby/wiki)
 
+---
+
 ## Todo
+
+### Basic
 
 - [x] Add Bulma support
 - [x] Add top navbar
@@ -18,7 +22,17 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 - [x] Footer credit
 - [x] [QuickView](https://wikiki.github.io/components/quickview/) for menu on mobile
 - [ ] Filter to handle image
-- [ ] Bulma Carousel
+- [ ] Install Bulma Carousel
+
+### Gallery Site
+
+- [x] Create Gallery
+- [x] Grid the post
+- [ ] 1 column on mobile, 2 on tablet, 3 on desktop, 4 column for large desktop
+- [ ] Modal for Post
+- [ ] Carousel the photos
+
+---
 
 ## Plan Design
 

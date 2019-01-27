@@ -23,7 +23,7 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 - [ ] Filter to handle image
 - [ ] Install Bulma Carousel
 - [x] Move menu on the navbar to the left side.
-- [ ] Add social media icon on the right side of the navbar.
+- [ ] Add social media icons on the right side of the navbar.
 - [ ] Replace landing page with gallery
 
 ### Gallery Site

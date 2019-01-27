@@ -15,6 +15,7 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 - [x] Add Bulma support
 - [x] Add top navbar
 - [x] Add Feathericon
+- [ ] Add icon link without button
 - [x] Make top navbar sticky when scroll up
 - [x] Animate top navbar while show or hide
 - [x] Footer credit

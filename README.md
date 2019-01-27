@@ -29,7 +29,7 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 
 - [x] Create Gallery
 - [x] Grid the post
-- [ ] 1 column on mobile, 2 on tablet, 3 on desktop, 4 column for large desktop
+- [x] 1 column on mobile, 2 on tablet, 3 on desktop, 4 column for large desktop
 - [ ] Modal for Post
 - [ ] Carousel the photos
 

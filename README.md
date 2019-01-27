@@ -44,6 +44,9 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 
 ## Plan Design
 
+
+![Mock-up design](https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/desktop/mockup.jpg)
+
 ### Desktop Screen
 
 | Gallery  | Modal Gallery |

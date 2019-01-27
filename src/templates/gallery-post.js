@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 
+// TODO: Show as modal
 class GalleryPost extends Component {
   render () {
     const { data } = this.props

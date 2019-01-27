@@ -49,7 +49,7 @@ class TopBar extends Component {
           <div
             id='navItem'
             className={`navbar-menu${isMenuShown ? ' is-active' : ''}`}>
-            <div className='navbar-end'>
+            <div className='navbar-start'>
               <NavigationItem items={data.site.siteMetadata.menuItems} />
             </div>
           </div>

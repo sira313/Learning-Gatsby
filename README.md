@@ -27,6 +27,7 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 - [ ] Add social media icons on the right side of the navbar.
 - [ ] Replace landing page with gallery
 - [ ] Using search filter from [habib-mustofa.com](https://www.habib-mustofa.com/blog)
+- [ ] Add bulma carousel under the box for header in the landing page
 
 ### Gallery Page
 
@@ -55,9 +56,13 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 
 ### Mobile Screen
 
-| Gallery  | Modal Gallery | Blog | Modal Blog
-| ------------- | ------------- | ------------- | ------------- |
-| <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileGallery.png" alt="Gallery" width="auto">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileModalGallery.png" alt="Modal Gallery" width="auto">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileBlog.png" alt="Gallery" width="auto">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileModalBlog.png" alt="Modal Gallery" width="auto">  |
+| Gallery  | Modal Gallery |
+| ------------- | ------------- |
+| <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileGallery.png" alt="Gallery" width="auto">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileModalGallery.png" alt="Modal Gallery" width="auto"> |
+
+| Blog  | Modal Blog |
+| ------------- | ------------- |
+| <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileBlog.png" alt="Gallery" width="auto">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/mobile/mobileModalBlog.png" alt="Modal Gallery" width="auto">  |
 
 | Search  | Quickview Menu |
 | ------------- | ------------- |

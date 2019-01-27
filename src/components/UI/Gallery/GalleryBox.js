@@ -1,7 +1,7 @@
 import React from 'react'
 
 const GalleryBox = props => (
-  <div className='column is-one-third is-flex'>
+  <div className='column is-one-quarter-fullhd is-one-third-desktop is-half-tablet'>
     <div className='box has-shadow-hover' style={{ padding: '0.5rem' }}>
       <figure className='image'>
         <img

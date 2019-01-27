@@ -19,7 +19,7 @@ class Gallery extends Component {
       <Layout>
         <SEO title='Gallery' keywords={seoKeywords} />
         <TopBar className='is-dark' logoSrc={logo} />
-        <section className='section'>
+        <section className='section has-background-light'>
           <div className='container'>
             {/* TODO: Add columns x3 */}
             <GalleryBoxes />

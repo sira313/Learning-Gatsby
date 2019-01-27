@@ -20,7 +20,7 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 - [x] Animate top navbar while show or hide
 - [x] Footer credit
 - [x] [QuickView](https://wikiki.github.io/components/quickview/) for menu on mobile
-- [ ] Default bulma dropdown menu on mobile to [QuickView](https://wikiki.github.io/components/quickview/)
+- [ ] Change default bulma dropdown menu on mobile to [QuickView](https://wikiki.github.io/components/quickview/)
 - [ ] Filter to handle image
 - [ ] Install Bulma Carousel
 - [x] Move menu on the navbar to the left side.

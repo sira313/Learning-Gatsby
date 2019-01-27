@@ -3,8 +3,6 @@ import Transition from 'react-transition-group/Transition'
 import TopBar from '../Navigation/TopBar'
 import { addOneScroll, removeOneScroll, status } from '../../shared/one-scroll'
 import logo from '../../images/aflasiowhite.png'
-import { Camera, Gitlab } from 'react-feather'
-import IconButton from '../UI/IconButton'
 
 const anim = (state, top) => {
   let mode = 'animated faster '

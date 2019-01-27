@@ -1,5 +1,5 @@
 menuItems = [
-  { name: 'Gallery', href: '#' },
+  { name: 'Gallery', href: '/gallery' },
   { name: 'Blog', href: '#' },
   { name: 'About', href: '#' },
   { name: 'Friends', href: '#' }

@@ -22,8 +22,8 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 - [x] [QuickView](https://wikiki.github.io/components/quickview/) for menu on mobile
 - [ ] Filter to handle image
 - [ ] Install Bulma Carousel
-- [x] Move menu on navbar to the left side.
-- [ ] social media icon on the right side.
+- [x] Move menu on the navbar to the left side.
+- [ ] Add social media icon on the right side of the navbar.
 - [ ] Replace landing page with gallery
 
 ### Gallery Site

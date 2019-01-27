@@ -10,7 +10,7 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 
 ## Todo
 
-### Basic
+### Basic Feature
 
 - [x] Add Bulma support
 - [x] Add top navbar
@@ -25,14 +25,20 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 - [x] Move menu on the navbar to the left side.
 - [ ] Add social media icons on the right side of the navbar.
 - [ ] Replace landing page with gallery
+- [ ] Using search filter from [habib-mustofa.com](https://www.habib-mustofa.com/blog)
 
-### Gallery Site
+### Gallery Page
 
-- [x] Create Gallery
+- [x] Create Gallery page
 - [x] Grid the post
 - [x] 1 column on mobile, 2 on tablet, 3 on desktop, 4 column for large desktop
 - [ ] Modal for Post
 - [ ] Carousel the photos
+
+### Blog Site
+- [ ] Create Blog page
+- [ ] Grid the post
+- [ ] Modal for the post
 
 ## Plan Design
 

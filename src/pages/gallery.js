@@ -3,6 +3,7 @@ import Layout from '../components/HOC/Layout'
 import SEO from '../components/Utility/SEO'
 import TopBar from '../components/Navigation/TopBar'
 import logo from '../images/aflasiowhite.png'
+import GalleryBoxes from '../components/UI/Gallery/GalleryBoxes'
 
 const seoKeywords = [
   'aflasio',
@@ -18,7 +19,12 @@ class Gallery extends Component {
       <Layout>
         <SEO title='Gallery' keywords={seoKeywords} />
         <TopBar className='is-dark' logoSrc={logo} />
-        <section>{/* TODO: Add columns x3 */}</section>
+        <section className='section'>
+          <div className='container'>
+            {/* TODO: Add columns x3 */}
+            <GalleryBoxes />
+          </div>
+        </section>
       </Layout>
     )
   }

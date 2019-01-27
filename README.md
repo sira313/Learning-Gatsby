@@ -44,8 +44,8 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 
 ## Plan Design
 
-
 ![Mock-up design](https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/desktop/mockup.jpg)
+[Mock-up template](https://www.freepik.com/free-psd/laptop-mobile-mock-up-design_1053178.htm)
 
 ### Desktop Screen
 

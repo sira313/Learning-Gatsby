@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Icon from './Icon'
 
 const DynamicLink = ({ className, to, isExternal, children }) => {
   const classStyle = `button${className ? ' ' + className : ''}`
@@ -24,12 +25,12 @@ const IconButton = ({
   isExternal = false,
   buttonClass,
   iconClass,
-  children,
+  iconName,
   text
 }) => (
   <DynamicLink to={to} className={buttonClass} isExternal={isExternal}>
     <span className={`icon${iconClass ? ' ' + iconClass : ''}`}>
-      {children}
+      <Icon size='18' name={iconName} />
     </span>
     {text ? <span>{text}</span> : null}
   </DynamicLink>

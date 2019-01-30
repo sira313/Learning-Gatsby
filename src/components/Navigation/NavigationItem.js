@@ -23,7 +23,7 @@ export const EndItem = ({ items }) => {
             <IconButton
               key={item.name}
               to={item.href}
-              buttonClass='is-primary'
+              buttonClass='has-transparent-bg has-text-light'
               iconName={item.icon}
               isExternal={item.href.includes('http')}
             />

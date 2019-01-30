@@ -13,3 +13,11 @@
 .has-box-shadow {
   box-shadow: 0 0px 10px #0000002d;
 }
+
+.has-transparent-bg {
+  background-color: transparent;
+  border: none;
+  &:hover {
+    background-color: $black-ter
+  }
+}

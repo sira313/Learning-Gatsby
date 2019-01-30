@@ -49,7 +49,7 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 
 ### Desktop Screen
 
-| Gallery  | Modal Gallery |
+| Home Gallery  | Modal Gallery |
 | ------------- | ------------- |
 | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/desktop/desktopGallery.png" alt="Gallery" width="auto">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/desktop/desktopModalGallery.png" alt="Modal Gallery" width="auto">  |
 

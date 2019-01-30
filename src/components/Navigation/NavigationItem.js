@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import IconButton from '../UI/IconButton'
 
-const NavigationItem = ({ items }) => (
+export const StartItem = ({ items }) => (
   <>
     {items
       ? items.map((item, index) => (
@@ -13,4 +14,22 @@ const NavigationItem = ({ items }) => (
   </>
 )
 
-export default NavigationItem
+export const EndItem = ({ items }) => {
+  return (
+    <div className='navbar-end'>
+      <div className='buttons'>
+        {items
+          ? items.map(item => (
+            <IconButton
+              key={item.name}
+              to={item.href}
+              buttonClass='is-primary'
+              iconName={item.icon}
+              isExternal={item.href.includes('http')}
+            />
+          ))
+          : null}
+      </div>
+    </div>
+  )
+}

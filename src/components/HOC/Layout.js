@@ -58,7 +58,10 @@ class Layout extends Component {
           <div className='content has-text-centered'>
             <p>
               &copy; 2019 <a href='https://www.aflasio.com'>Aflasio</a> and{' '}
-              <a href='https://www.habib-mustofa.com'>friend</a>.
+              <a href='https://www.habib-mustofa.com'>friend</a>.<br />
+              Powered by <a href='https://www.gatsbyjs.org/'>Gatsby</a>,{' '}
+              <a href='https://bulma.io/'>Bulma</a>, and <a href='https://www.netlify.com/'>Netlify</a>.<br />
+              Source on <a href='https://github.com/sira313/Learning-Gatsby'>Github</a>.
             </p>
           </div>
         </footer>

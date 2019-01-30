@@ -2,7 +2,7 @@
 
 ## Description
 
-<!-- TODO: Add project description here -->
+>While learning, we're trying to build a portfolio website for designer and artist.
 
 This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-cli) using following command `gatsby new Learning-Gatsby`. 
 - [Live Demo](https://learninggatsbyjs.netlify.com/)
@@ -15,7 +15,7 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 - [x] Add Bulma support
 - [x] Add top navbar
 - [x] Add Feathericon
-- [ ] Add icon link without button
+- [x] Add icon link with transparent button
 - [x] Make top navbar sticky when scroll up
 - [x] Animate top navbar while show or hide
 - [x] Footer credit
@@ -24,7 +24,7 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 - [ ] Filter to handle image
 - [ ] Install Bulma Carousel
 - [x] Move menu on the navbar to the left side.
-- [ ] Add social media icons on the right side of the navbar.
+- [x] Add social media icons on the right side of the navbar.
 - [ ] Replace landing page with gallery
 - [ ] Using search filter from [habib-mustofa.com](https://www.habib-mustofa.com/blog)
 - [ ] Add bulma carousel under the box for header in the landing page
@@ -49,7 +49,7 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 
 ### Desktop Screen
 
-| Gallery  | Modal Gallery |
+| Home Gallery  | Modal Gallery |
 | ------------- | ------------- |
 | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/desktop/desktopGallery.png" alt="Gallery" width="auto">  | <img src="https://raw.githubusercontent.com/sira313/Learning-Gatsby/master/src/images/design/desktop/desktopModalGallery.png" alt="Modal Gallery" width="auto">  |
 

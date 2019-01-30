@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { graphql, StaticQuery, Link } from 'gatsby'
-import NavigationItem from './NavigationItem'
+import { StartItem, EndItem } from './NavigationItem'
 
 /**
  * shown: is state of menu item on mobile
@@ -50,8 +50,10 @@ class TopBar extends Component {
             id='navItem'
             className={`navbar-menu${isMenuShown ? ' is-active' : ''}`}>
             <div className='navbar-start'>
-              <NavigationItem items={data.site.siteMetadata.menuItems} />
+              <StartItem items={data.site.siteMetadata.menuItemsStart} />
             </div>
+
+            <EndItem items={data.site.siteMetadata.menuItemsEnd} />
           </div>
         </div>
       </nav>
@@ -64,9 +66,15 @@ const query = graphql`
   query {
     site {
       siteMetadata {
-        menuItems {
+        menuItemsStart {
           name
           href
+        }
+        menuItemsEnd {
+          name
+          href
+          icon
+          external
         }
       }
     }

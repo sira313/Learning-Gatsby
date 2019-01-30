@@ -74,7 +74,6 @@ const query = graphql`
           name
           href
           icon
-          external
         }
       }
     }

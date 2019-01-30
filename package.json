@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Sira",
   "dependencies": {
+    "feather-icons": "^4.14.0",
     "gatsby": "^2.0.76",
     "gatsby-image": "^2.0.20",
     "gatsby-plugin-manifest": "^2.0.9",
@@ -18,7 +19,6 @@
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-feather": "^1.1.5",
     "react-helmet": "^5.2.0",
     "react-transition-group": "^2.5.3"
   },

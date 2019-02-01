@@ -17,14 +17,13 @@ const seoKeywords = [
 class Gallery extends Component {
   render () {
     const { data } = this.props
-    console.log(data) // TODO: Show all post data to GalleryBoxes
     return (
       <Layout>
         <SEO title='Gallery' keywords={seoKeywords} />
         <TopBar className='is-dark' logoSrc={logo} />
         <section className='section has-background-light'>
           <div className='container'>
-            <GalleryBoxes />
+            <GalleryBoxes data={data} />
           </div>
         </section>
       </Layout>
@@ -44,6 +43,14 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            categories
+            coverIndex {
+              childImageSharp {
+                fluid(maxWidth: 480, maxHeight: 320) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

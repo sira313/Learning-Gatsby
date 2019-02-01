@@ -1,50 +1,61 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Layout from '../components/HOC/Layout'
 import SEO from '../components/Utility/SEO'
 import TopBar from '../components/Navigation/TopBar'
 import logo from '../images/aflasiowhite.png'
-import landingPage from '../images/landingPage.svg'
-import { Link } from 'gatsby'
+import GalleryBoxes from '../components/UI/Gallery/GalleryBoxes'
+import { graphql } from 'gatsby'
 
 const seoKeywords = [
   'aflasio',
-  'home',
+  'gallery',
   'artist',
-  'landing page',
-  'tukang gambar'
+  'flat design',
+  'graphic motion'
 ]
 
-const Index = () => (
-  <Layout>
-    <SEO title='Home' keywords={seoKeywords} />
-    <section className='hero is-fullheight has-bg-img is-dark'>
-      <div className='hero-head'>
-        <TopBar logoSrc={logo} />
-      </div>
-      <div className='hero-body'>
-        <div className='container has-text-centered'>
-          <div className='columns is-vcentered'>
-            <div className='column is-5'>
-              <figure className='image is-4by3'>
-                <img src={landingPage} alt='Aflasio' />
-              </figure>
-            </div>
-            <div className='column is-6 is-offset-1'>
-              <h1 className='title is-2'>Aflasio</h1>
-              <h2 className='subtitle is-4 is-size-6-mobile'>
-                Hello.. My name is Sira Argia. I am an artist who use FLOSS for
-                work.
-              </h2>
-              <br />
-              <Link to='/' className='button is-medium is-light is-outlined'>
-                More...
-              </Link>
-            </div>
+class Index extends Component {
+  render () {
+    const { data } = this.props
+    return (
+      <Layout>
+        <SEO title='Home' keywords={seoKeywords} />
+        <TopBar className='is-dark' logoSrc={logo} />
+        <section className='section has-background-light'>
+          <div className='container'>
+            <GalleryBoxes data={data} />
           </div>
-        </div>
-      </div>
-    </section>
-  </Layout>
-)
+        </section>
+      </Layout>
+    )
+  }
+}
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            categories
+            coverIndex {
+              childImageSharp {
+                fluid(maxWidth: 480, maxHeight: 320) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 export default Index

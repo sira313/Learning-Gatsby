@@ -25,7 +25,7 @@ This project was generate by [Gatsby-cli](https://www.npmjs.com/package/gatsby-c
 - [ ] Install Bulma Carousel
 - [x] Move menu on the navbar to the left side.
 - [x] Add social media icons on the right side of the navbar.
-- [ ] Replace landing page with gallery
+- [x] Replace landing page with gallery
 - [ ] Using search filter from [habib-mustofa.com](https://www.habib-mustofa.com/blog)
 - [ ] Add bulma carousel under the box for header in the landing page
 

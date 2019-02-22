@@ -1,19 +1,29 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
+import GalleryDetail from '../components/UI/Gallery/GalleryDetail'
+import SEO from '../components/Utility/SEO';
+
+let seoKeywords = [
+  'aflasio',
+  'gallery',
+  'artist',
+  'flat design',
+  'graphic motion'
+]
 
 // TODO: Show as modal
 class GalleryPost extends Component {
   render () {
     const { data } = this.props
     const post = data.markdownRemark
+
+    const { title, categories, tags } = post.frontmatter
+    seoKeywords = [...seoKeywords, title, categories, ...tags]
+
     return (
-      <div className='section'>
-        <div className='container'>
-          <div
-            className='content is-size-5-desktop is-size-5-tablet has-text-justified'
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
-        </div>
+      <div className='section is-paddingless'>
+        <SEO title={title} description={post.excerpt} keywords={seoKeywords} />
+        <GalleryDetail post={post} />
       </div>
     )
   }
@@ -28,6 +38,15 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        categories
+        tags
+        photos {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

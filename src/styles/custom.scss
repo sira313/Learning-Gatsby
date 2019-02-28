@@ -21,3 +21,14 @@
     background-color: $black-ter
   }
 }
+
+// table-profile
+.table-profile td,
+th {
+  border: none !important;
+}
+
+.table-profile td:first-of-type {
+  font-weight: bold;
+  width: 100px;
+}

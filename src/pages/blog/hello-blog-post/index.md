@@ -4,7 +4,8 @@ date: 2019-01-27 22:50:21
 tags: 
   - fun
   - research
-categories: Linux
+category: Linux
+subcategory: Hacking
 ---
 
 # What is Lorem Ipsum?

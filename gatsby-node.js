@@ -9,30 +9,39 @@ const { createFilePath } = require('gatsby-source-filesystem')
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
-    createNodeField({
-      name: `slug`,
-      node,
-      value
-    })
+    const parentDir = getNode(node.parent).sourceInstanceName
+    const slug = '/' + parentDir + createFilePath({ node, getNode })
+    createNodeField({ name: `postType`, node, value: parentDir })
+    createNodeField({ name: `slug`, node, value: slug })
   }
 }
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
-
   const galleryPost = path.resolve('./src/templates/gallery-post.js')
+  const blogPost = path.resolve('./src/templates/blog-post.js')
   return graphql(
     `
       {
-        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+        gallery: allMarkdownRemark(
+          sort: { fields: [frontmatter___date], order: DESC }
+          filter: { fields: { postType: { eq: "gallery" } } }
+        ) {
           edges {
             node {
               fields {
                 slug
               }
-              frontmatter {
-                title
+            }
+          }
+        }
+        blog: allMarkdownRemark(
+          sort: { fields: [frontmatter___date], order: DESC }
+          filter: { fields: { postType: { eq: "blog" } } }
+        ) {
+          edges {
+            node {
+              fields {
+                slug
               }
             }
           }
@@ -43,22 +52,23 @@ exports.createPages = ({ graphql, actions }) => {
     if (res.errors) {
       throw res.errors
     }
+    createPostPage(actions, res.data.gallery.edges, galleryPost)
+    createPostPage(actions, res.data.blog.edges, blogPost)
+  })
+}
 
-    const galleryPosts = res.data.allMarkdownRemark.edges
-    galleryPosts.forEach((post, index) => {
-      const previous =
-        index === galleryPosts.length - 1 ? null : galleryPosts[index + 1].node
-      const next = index === 0 ? null : galleryPosts[index - 1].node
-
-      createPage({
-        path: post.node.fields.slug,
-        component: galleryPost,
-        context: {
-          slug: post.node.fields.slug,
-          previous,
-          next
-        }
-      })
+const createPostPage = (actions, posts, component) => {
+  posts.forEach((post, index) => {
+    const previous = index === posts.length - 1 ? null : posts[index + 1].node
+    const next = index === 0 ? null : posts[index - 1].node
+    actions.createPage({
+      path: post.node.fields.slug,
+      component,
+      context: {
+        slug: post.node.fields.slug,
+        previous,
+        next
+      }
     })
   })
 }

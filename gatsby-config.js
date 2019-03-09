@@ -14,8 +14,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages`
+        name: `gallery`,
+        path: `${__dirname}/src/pages/gallery`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/pages/blog`
       }
     },
     `gatsby-transformer-sharp`,

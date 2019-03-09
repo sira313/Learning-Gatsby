@@ -23,7 +23,7 @@ class Index extends Component {
         <TopBar className='is-dark' logoSrc={logo} />
         <section className='section has-background-light'>
           <div className='container'>
-            <GalleryBoxes data={data} />
+            <GalleryBoxes edges={data.gallery.edges} />
           </div>
         </section>
       </Layout>
@@ -33,7 +33,9 @@ class Index extends Component {
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    gallery: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: {fields: {postType: {eq: "gallery"}}}) {
       edges {
         node {
           excerpt

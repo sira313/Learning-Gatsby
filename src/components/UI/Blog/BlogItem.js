@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import PostInfo from '../PostInfo'
 
 /** node result **
 node
@@ -23,9 +24,7 @@ const BlogItem = ({ node }) => {
         <article className='media'>
           <div className='meida-content'>
             <h1 className='is-size-4'>{frontmatter.title}</h1>
-            <p className='is-size-7'>{`Posted on ${frontmatter.date} in ${
-              frontmatter.category
-            }`}</p>
+            <PostInfo date={frontmatter.date} category={frontmatter.category} />
             <p>{excerpt}</p>
           </div>
         </article>

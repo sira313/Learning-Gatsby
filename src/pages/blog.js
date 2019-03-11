@@ -5,6 +5,7 @@ import SEO from '../components/Utility/SEO'
 import TopBar from '../components/Navigation/TopBar'
 import logo from '../images/aflasiowhite.png'
 import BlogItems from '../components/UI/Blog/BlogItems'
+import Banner from '../components/UI/Banner';
 
 const seoKeywords = ['aflasio', 'blog', 'linux']
 
@@ -15,6 +16,7 @@ const Blog = ({ data }) => {
       <TopBar className='is-dark' logoSrc={logo} />
       <section className='section has-background-light'>
         <div className='container'>
+          <Banner />
           <BlogItems edges={data.blog.edges} />
         </div>
       </section>

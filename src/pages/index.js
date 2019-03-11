@@ -5,6 +5,7 @@ import TopBar from '../components/Navigation/TopBar'
 import logo from '../images/aflasiowhite.png'
 import GalleryBoxes from '../components/UI/Gallery/GalleryBoxes'
 import { graphql } from 'gatsby'
+import Banner from '../components/UI/Banner';
 
 const seoKeywords = [
   'aflasio',
@@ -21,6 +22,7 @@ const Index = ({ data }) => {
       <TopBar className='is-dark' logoSrc={logo} />
       <section className='section has-background-light'>
         <div className='container'>
+          <Banner />
           <GalleryBoxes edges={data.gallery.edges} />
         </div>
       </section>

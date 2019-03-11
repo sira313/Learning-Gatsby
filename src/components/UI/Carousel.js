@@ -1,13 +1,17 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
-const PhotoCarousel = ({ photos = [] }) => (
-  <Carousel showArrows={true} showThumbs={false}>
+const PhotoCarousel = ({ photos = [], type = 'fluid' }) => (
+  <Carousel showArrows showThumbs={false}>
     {photos.map((e, i) => (
       <div key={i}>
-        <Img fluid={e.childImageSharp.fluid} fadeIn />
+        {type === 'fixed' ? (
+          <Img fixed={e.childImageSharp.fixed} fadeIn />
+        ) : (
+          <Img fluid={e.childImageSharp.fluid} fadeIn />
+        )}
       </div>
     ))}
   </Carousel>

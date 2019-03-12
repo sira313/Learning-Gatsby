@@ -6,7 +6,7 @@ tags:
   - agito
   - shark
   - fanart
-categories: Commissioned
+category: Commissioned
 coverIndex: ./seira.jpg
 photos: 
   - ./seira.jpg

@@ -6,7 +6,7 @@ tags:
   - agito
   - shark
   - fanart
-categories: Commissioned
+category: Commissioned
 coverIndex: ./razan.jpg
 photos: 
   - ./razan.jpg

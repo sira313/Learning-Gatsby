@@ -45,7 +45,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            categories
+            category
             coverIndex {
               childImageSharp {
                 fluid(maxWidth: 480, maxHeight: 320) {

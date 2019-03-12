@@ -5,7 +5,7 @@ tags:
   - hijab
   - portrait
   - painting
-categories: Commissioned
+category: Commissioned
 coverIndex: ./cover.png
 photos: 
   - ./komis.png

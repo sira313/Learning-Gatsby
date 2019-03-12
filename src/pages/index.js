@@ -5,7 +5,7 @@ import TopBar from '../components/Navigation/TopBar'
 import logo from '../images/aflasiowhite.png'
 import GalleryBoxes from '../components/UI/Gallery/GalleryBoxes'
 import { graphql } from 'gatsby'
-import Banner from '../components/UI/Banner';
+import Banner from '../components/UI/Banner'
 
 const seoKeywords = [
   'aflasio',
@@ -16,14 +16,24 @@ const seoKeywords = [
 ]
 
 const Index = ({ data }) => {
+  const { edges } = data.gallery
+  // categories is automatic created by post category distinctly
+  const categories = edges
+    .map(e => e.node.frontmatter.category)
+    .filter((v, i, e) => e.indexOf(v) === i)
+
+  function onSearch (e) {
+    console.log('SEARCH FOR: ', e)
+  }
+
   return (
     <Layout>
       <SEO title='Home' keywords={seoKeywords} />
       <TopBar className='is-dark' logoSrc={logo} />
       <section className='section has-background-light'>
         <div className='container'>
-          <Banner />
-          <GalleryBoxes edges={data.gallery.edges} />
+          <Banner categories={categories} onSearch={onSearch} />
+          <GalleryBoxes edges={edges} />
         </div>
       </section>
     </Layout>

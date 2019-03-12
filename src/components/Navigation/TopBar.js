@@ -8,7 +8,7 @@ import { StartItem, EndItem } from './NavigationItem'
  */
 const TopBar = ({ className, logoSrc }) => {
   const [menuShown, setMenuShown] = useState(false)
-  
+
   function burgerHandler () {
     setMenuShown(!menuShown)
   }
@@ -30,7 +30,7 @@ const TopBar = ({ className, logoSrc }) => {
           <div
             role='button'
             onClick={burgerHandler}
-            className='navbar-burger burger'
+            className={`navbar-burger burger${menuShown ? ' is-active' : ''}`}
             aria-label='menu'
             aria-expanded='false'
             data-target='navItem'>

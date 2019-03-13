@@ -21,7 +21,7 @@ class GalleryPost extends Component {
     seoKeywords = [...seoKeywords, title, categories, ...tags]
 
     return (
-      <div className='section is-paddingless'>
+      <div className='section'>
         <SEO title={title} description={post.excerpt} keywords={seoKeywords} />
         <GalleryDetail post={post} />
       </div>

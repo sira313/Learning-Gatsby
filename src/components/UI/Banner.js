@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { graphql, StaticQuery } from 'gatsby'
-import PhotoCarousel from './Carousel'
+import ImageCarousel from './ImageCarousel'
 import CategoryBar from '../Navigation/CategoryBar'
 
 const Banner = ({ categories = [], onSearch }) => {
@@ -21,7 +21,7 @@ const Banner = ({ categories = [], onSearch }) => {
           <StaticQuery
             query={imageQuery}
             render={data => (
-              <PhotoCarousel
+              <ImageCarousel
                 photos={data.images ? data.images.edges.map(e => e.node) : []}
               />
             )}

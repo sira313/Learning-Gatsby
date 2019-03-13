@@ -1,10 +1,10 @@
 import React from 'react'
-import Carousel from '../Carousel'
+import ImageCarousel from '../ImageCarousel'
 
 const GalleryDetail = ({ post }) => (
   <div className='columns'>
     <div className='column is-8'>
-      <Carousel photos={post.frontmatter.photos} />
+      <ImageCarousel photos={post.frontmatter.photos} />
     </div>
     <div className='column'>
       <div style={{paddingLeft: '1rem', paddingRight: '1rem'}}>

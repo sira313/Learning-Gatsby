@@ -3,7 +3,7 @@ import Layout from '../components/HOC/Layout'
 import SEO from '../components/Utility/SEO'
 import TopBar from '../components/Navigation/TopBar'
 import logo from '../images/aflasiowhite.png'
-import GalleryBoxes from '../components/UI/Gallery/GalleryBoxes'
+import GalleryItems from '../components/UI/Gallery/GalleryItems'
 import { graphql } from 'gatsby'
 import Banner from '../components/UI/Banner'
 
@@ -33,7 +33,7 @@ const Index = ({ data }) => {
       <section className='section has-background-light'>
         <div className='container'>
           <Banner categories={categories} onSearch={onSearch} />
-          <GalleryBoxes edges={edges} />
+          <GalleryItems edges={edges} />
         </div>
       </section>
     </Layout>

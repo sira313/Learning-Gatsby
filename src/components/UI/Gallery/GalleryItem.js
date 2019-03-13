@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 
-const GalleryBox = ({ node }) => (
+const GalleryItem = ({ node }) => (
   <div className='column is-one-quarter-fullhd is-one-third-desktop is-half-tablet'>
     <div
       className='box has-box-shadow has-shadow-hover'
@@ -14,4 +14,4 @@ const GalleryBox = ({ node }) => (
   </div>
 )
 
-export default GalleryBox
+export default GalleryItem

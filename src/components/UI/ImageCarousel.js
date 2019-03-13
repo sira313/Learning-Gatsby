@@ -3,7 +3,7 @@ import Img from 'gatsby-image'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
-const PhotoCarousel = ({ photos = [], type = 'fluid' }) => (
+const ImageCarousel = ({ photos = [], type = 'fluid' }) => (
   <Carousel showArrows showThumbs={false}>
     {photos.map((e, i) => (
       <div key={i}>
@@ -17,4 +17,4 @@ const PhotoCarousel = ({ photos = [], type = 'fluid' }) => (
   </Carousel>
 )
 
-export default PhotoCarousel
+export default ImageCarousel

@@ -50,3 +50,17 @@ th {
     margin-left: -6px;
   }
 }
+
+// Padding box on mobile
+@media screen and (max-width: 500px) {
+.has-mobile-padding {
+    padding: 0.3rem;
+}
+}
+
+// Padding box on desktop
+@media screen and (min-width: 501px) {
+.has-mobile-padding {
+    padding: 0.5rem;
+}
+}

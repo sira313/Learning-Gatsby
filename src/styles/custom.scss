@@ -1,4 +1,28 @@
 // Our custom style here
+
+// scrollbar style on chrome & opera
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.274); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.459); 
+}
+
+// scrollbar style on firefox
+html {
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  }
+
 .has-shadow-hover {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 

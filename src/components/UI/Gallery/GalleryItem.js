@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 
 const GalleryItem = ({ node }) => (
-  <div className='column is-one-quarter-fullhd is-one-third-desktop is-half-mobile'>
+  <div className='column is-one-quarter-fullhd is-one-third-desktop is-half-mobile is-gap-mobile'>
     <div
       className='box has-box-shadow has-shadow-hover'
       style={{ padding: '0.5rem' }}>

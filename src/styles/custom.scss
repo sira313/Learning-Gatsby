@@ -32,3 +32,21 @@ th {
   font-weight: bold;
   width: 100px;
 }
+
+// gap for mobile column
+@media screen and (max-width: 900px) {
+.is-gap-mobile {
+    padding-top: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+  }
+}
+
+// gap for mobile columns
+@media screen and (max-width: 900px) {
+.has-container-margin {
+    margin-right: -6px;
+    margin-left: -6px;
+  }
+}

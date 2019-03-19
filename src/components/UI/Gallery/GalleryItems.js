@@ -3,7 +3,7 @@ import GalleryItem from './GalleryItem'
 
 const GalleryItems = ({ edges }) => {
   return (
-    <div className='columns is-centered is-multiline is-mobile'>
+    <div className='columns is-centered is-multiline is-mobile has-container-margin'>
       {edges.map(e => (
         <GalleryItem key={e.node.fields.slug} node={e.node} />
       ))}
